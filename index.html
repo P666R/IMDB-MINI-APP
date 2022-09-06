@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IMDB MINI APP for CodingNinja project" />
+    <meta name="author" content="PRoy" />
+    <title>IMDB MINI APP</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- logo -->
+
+        <div class="logo">
+            <div class="container">
+                <a href="/index.html">
+                    <p>IMDB<span>miniapp</span></p>
+                </a>
+                <a href="../html/fav.html">
+                    <p>FAVOURITE<span>movies</span></p>
+                </a>
+            </div>
+        </div>
+
+        <!-- search container -->
+
+        <div class="search-container">
+
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="Search Movie Title ..." id="movie-search-box"
+                    onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list">
+
+                    <!-- list template -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- result container -->
+
+        <div class="container">
+
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+
+                    <!-- movie information template -->
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
+
+
+<!-- list template -->
+
+<!-- <div class="search-list-item">
+    <div class="search-item-thumbnail">
+        <img src="medium-cover.jpg">
+    </div>
+    <div class="search-item-info">
+        <h3>Guardians of the Galaxy Vol. 2</h3>
+        <p>2017</p>
+    </div>
+</div> -->
+
+
+<!-- movie information template -->
+
+<!-- <div class="movie-poster">
+    <img src="medium-cover.jpg" alt="movie poster">
+</div>
+<div class="movie-info">
+    <h3 class="movie-title">Guardians of the Galaxy Vol. 2</h3>
+    <ul class="movie-misc-info">
+        <li class="year">Year: 2017</li>
+        <li class="rated">Ratings: PG-13</li>
+        <li class="released">Released: 05 May 2017</li>
+    </ul>
+    <p class="genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+    <p class="writer"><b>Writer:</b> James Gunn, Don Abnett, Andy Lanning</p>
+    <p class="actors"><b>Actors: </b>Chris Pratt, Zoe Saldana, Dave Bautista</p>
+    <p class="plot"><b>Plot:</b> The Guardians struggle to keep together as a team while dealing with their personal
+        family issues, notably Star-Lord's ecounter with his father the ambitious celestial being Ego.</p>
+    <p class="language"><b>Language:</b> English</p>
+    <p class="awards"><b><i class="fas fa-award"></i></b> Nominated for 1 Oscar</p>
+</div>
+<button id="info-movie" class="info-movie" type="submit">Click for more information</button> -->
