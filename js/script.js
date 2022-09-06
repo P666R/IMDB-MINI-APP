@@ -118,7 +118,7 @@ function displayMovieDetails(details) {
 
     function openPage() {
         localStorage.setItem("MovieInfo", JSON.stringify(details));
-        parent.location = "../html/info.html";
+        parent.location = "https://p666r.github.io/html/info.html";
     }
 
     // click event on info movie button
