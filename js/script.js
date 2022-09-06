@@ -51,7 +51,7 @@ function displayMovieList(movies) {
         if (movies[idx].Poster != "N/A") {
             moviePoster = movies[idx].Poster;
         } else {
-            moviePoster = "./image/image_not_found.png";
+            moviePoster = "image_not_found.png";
         }
 
         movieListItem.innerHTML = `
@@ -100,7 +100,7 @@ function loadMovieDetails() {
 function displayMovieDetails(details) {
     resultGrid.innerHTML = `
     <div class = "movie-poster">
-    <img src = "${(details.Poster != "N/A") ? details.Poster : './image/image_not_found.png'}" alt = "movie poster">
+    <img src = "${(details.Poster != "N/A") ? details.Poster : 'image_not_found.png'}" alt = "movie poster">
     </div>
     <div class = "movie-info">
     <h3 class = "movie-title">${details.Title}</h3>
